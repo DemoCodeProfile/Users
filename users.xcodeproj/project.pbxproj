@@ -30,6 +30,7 @@
 		DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */; };
 		DDA7B4C623897DB100A4C69D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BF23897DB100A4C69D /* Theme.swift */; };
 		DDA7B4C923897E0200A4C69D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4C823897E0200A4C69D /* User.swift */; };
+		DDA7B4CC23897E3500A4C69D /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4CB23897E3500A4C69D /* ServerAPI.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFonts.swift; sourceTree = "<group>"; };
 		DDA7B4BF23897DB100A4C69D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DDA7B4C823897E0200A4C69D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DDA7B4CB23897E3500A4C69D /* ServerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 		DD39BF892386C61E00FDC562 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4CA23897E3500A4C69D /* Targes */,
 				DDA7B4C723897E0200A4C69D /* Models */,
 			);
 			path = Entities;
@@ -280,6 +283,14 @@
 				DDA7B4C823897E0200A4C69D /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DDA7B4CA23897E3500A4C69D /* Targes */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4CB23897E3500A4C69D /* ServerAPI.swift */,
+			);
+			path = Targes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,6 +546,7 @@
 				DD39BFB72386D70900FDC562 /* Observable+Ext.swift in Sources */,
 				DDA7B4C223897DB100A4C69D /* DefaultThemeFonts.swift in Sources */,
 				DD39BFB02386D68200FDC562 /* FlowableConfiguration.swift in Sources */,
+				DDA7B4CC23897E3500A4C69D /* ServerAPI.swift in Sources */,
 				DD39BF662386B61500FDC562 /* AppDelegate.swift in Sources */,
 				DD39BFB52386D70900FDC562 /* SharedSequence+Ext.swift in Sources */,
 				DDA7B4C623897DB100A4C69D /* Theme.swift in Sources */,
