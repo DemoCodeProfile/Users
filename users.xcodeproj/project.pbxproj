@@ -22,6 +22,13 @@
 		DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39BFB42386D70900FDC562 /* Result+Ext.swift */; };
 		DD39BFD52386D98C00FDC562 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD39BFD72386D98C00FDC562 /* Localizable.strings */; };
 		DD39BFDC2386DB8400FDC562 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39BFDB2386DB8400FDC562 /* R.generated.swift */; };
+		DDA7B4C023897DB100A4C69D /* ThemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4B823897DB100A4C69D /* ThemeApp.swift */; };
+		DDA7B4C123897DB100A4C69D /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4B923897DB100A4C69D /* ThemeColors.swift */; };
+		DDA7B4C223897DB100A4C69D /* DefaultThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BB23897DB100A4C69D /* DefaultThemeFonts.swift */; };
+		DDA7B4C323897DB100A4C69D /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BC23897DB100A4C69D /* DefaultTheme.swift */; };
+		DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BD23897DB100A4C69D /* DefaultThemeColors.swift */; };
+		DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */; };
+		DDA7B4C623897DB100A4C69D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BF23897DB100A4C69D /* Theme.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,13 @@
 		DD39BFD82386D9A200FDC562 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD39BFD92386D9A200FDC562 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DD39BFDB2386DB8400FDC562 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		DDA7B4B823897DB100A4C69D /* ThemeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeApp.swift; sourceTree = "<group>"; };
+		DDA7B4B923897DB100A4C69D /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		DDA7B4BB23897DB100A4C69D /* DefaultThemeFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultThemeFonts.swift; sourceTree = "<group>"; };
+		DDA7B4BC23897DB100A4C69D /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		DDA7B4BD23897DB100A4C69D /* DefaultThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultThemeColors.swift; sourceTree = "<group>"; };
+		DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFonts.swift; sourceTree = "<group>"; };
+		DDA7B4BF23897DB100A4C69D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +158,7 @@
 		DD39BF872386B77C00FDC562 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4B723897DB100A4C69D /* Theme */,
 				DD39BF8C2386C64300FDC562 /* Modules */,
 				DD39BF892386C61E00FDC562 /* Entities */,
 				DD39BF8E2386C65700FDC562 /* Services */,
@@ -232,6 +247,28 @@
 				DD39BFAB2386D68200FDC562 /* FlowableConfiguration.swift */,
 			);
 			path = Flowable;
+			sourceTree = "<group>";
+		};
+		DDA7B4B723897DB100A4C69D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4B823897DB100A4C69D /* ThemeApp.swift */,
+				DDA7B4B923897DB100A4C69D /* ThemeColors.swift */,
+				DDA7B4BA23897DB100A4C69D /* DefaultTheme */,
+				DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */,
+				DDA7B4BF23897DB100A4C69D /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		DDA7B4BA23897DB100A4C69D /* DefaultTheme */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4BB23897DB100A4C69D /* DefaultThemeFonts.swift */,
+				DDA7B4BC23897DB100A4C69D /* DefaultTheme.swift */,
+				DDA7B4BD23897DB100A4C69D /* DefaultThemeColors.swift */,
+			);
+			path = DefaultTheme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,15 +517,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA7B4C323897DB100A4C69D /* DefaultTheme.swift in Sources */,
 				DD39BFDC2386DB8400FDC562 /* R.generated.swift in Sources */,
 				DD39BFAE2386D68200FDC562 /* Flowable.swift in Sources */,
 				DD39BFAD2386D68200FDC562 /* OpenConfiguration.swift in Sources */,
 				DD39BFB72386D70900FDC562 /* Observable+Ext.swift in Sources */,
+				DDA7B4C223897DB100A4C69D /* DefaultThemeFonts.swift in Sources */,
 				DD39BFB02386D68200FDC562 /* FlowableConfiguration.swift in Sources */,
 				DD39BF662386B61500FDC562 /* AppDelegate.swift in Sources */,
 				DD39BFB52386D70900FDC562 /* SharedSequence+Ext.swift in Sources */,
+				DDA7B4C623897DB100A4C69D /* Theme.swift in Sources */,
 				DD39BFAF2386D68200FDC562 /* FlowableViewController.swift in Sources */,
 				DD39BFB62386D70900FDC562 /* UIViewController+Ext.swift in Sources */,
+				DDA7B4C123897DB100A4C69D /* ThemeColors.swift in Sources */,
+				DDA7B4C023897DB100A4C69D /* ThemeApp.swift in Sources */,
+				DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */,
+				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
 			);
