@@ -38,6 +38,8 @@
 		DDA7B4D723897F2E00A4C69D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4D523897F2E00A4C69D /* Reachability.swift */; };
 		DDA7B4D923897F5500A4C69D /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4D823897F5500A4C69D /* ServiceError.swift */; };
 		DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4DE23897FCC00A4C69D /* Plug.swift */; };
+		DDA7B4EA2389802200A4C69D /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */; };
+		DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		DDA7B4D523897F2E00A4C69D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		DDA7B4D823897F5500A4C69D /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		DDA7B4DE23897FCC00A4C69D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
+		DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,9 +329,19 @@
 		DDA7B4DA23897FCC00A4C69D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4E72389802200A4C69D /* ActivityIndicatorView */,
 				DDA7B4DE23897FCC00A4C69D /* Plug.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		DDA7B4E72389802200A4C69D /* ActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */,
+				DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */,
+			);
+			path = ActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,6 +615,8 @@
 				DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */,
 				DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
+				DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */,
+				DDA7B4EA2389802200A4C69D /* ActivityIndicatorViewController.swift in Sources */,
 				DDA7B4D723897F2E00A4C69D /* Reachability.swift in Sources */,
 				DDA7B4C923897E0200A4C69D /* User.swift in Sources */,
 			);
