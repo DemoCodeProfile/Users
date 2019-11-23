@@ -31,6 +31,9 @@
 		DDA7B4C623897DB100A4C69D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BF23897DB100A4C69D /* Theme.swift */; };
 		DDA7B4C923897E0200A4C69D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4C823897E0200A4C69D /* User.swift */; };
 		DDA7B4CC23897E3500A4C69D /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4CB23897E3500A4C69D /* ServerAPI.swift */; };
+		DDA7B4D123897E9900A4C69D /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4CE23897E9900A4C69D /* DependencyInjection.swift */; };
+		DDA7B4D223897E9900A4C69D /* DIContainerSwinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4CF23897E9900A4C69D /* DIContainerSwinject.swift */; };
+		DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4D023897E9900A4C69D /* DIContainerService.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		DDA7B4BF23897DB100A4C69D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DDA7B4C823897E0200A4C69D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDA7B4CB23897E3500A4C69D /* ServerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+		DDA7B4CE23897E9900A4C69D /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		DDA7B4CF23897E9900A4C69D /* DIContainerSwinject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerSwinject.swift; sourceTree = "<group>"; };
+		DDA7B4D023897E9900A4C69D /* DIContainerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerService.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +232,7 @@
 		DD39BF8E2386C65700FDC562 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4CD23897E9900A4C69D /* Dependencies */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +298,16 @@
 				DDA7B4CB23897E3500A4C69D /* ServerAPI.swift */,
 			);
 			path = Targes;
+			sourceTree = "<group>";
+		};
+		DDA7B4CD23897E9900A4C69D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4CE23897E9900A4C69D /* DependencyInjection.swift */,
+				DDA7B4CF23897E9900A4C69D /* DIContainerSwinject.swift */,
+				DDA7B4D023897E9900A4C69D /* DIContainerService.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,10 +557,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA7B4C323897DB100A4C69D /* DefaultTheme.swift in Sources */,
+				DDA7B4D223897E9900A4C69D /* DIContainerSwinject.swift in Sources */,
 				DD39BFDC2386DB8400FDC562 /* R.generated.swift in Sources */,
 				DD39BFAE2386D68200FDC562 /* Flowable.swift in Sources */,
 				DD39BFAD2386D68200FDC562 /* OpenConfiguration.swift in Sources */,
 				DD39BFB72386D70900FDC562 /* Observable+Ext.swift in Sources */,
+				DDA7B4D123897E9900A4C69D /* DependencyInjection.swift in Sources */,
 				DDA7B4C223897DB100A4C69D /* DefaultThemeFonts.swift in Sources */,
 				DD39BFB02386D68200FDC562 /* FlowableConfiguration.swift in Sources */,
 				DDA7B4CC23897E3500A4C69D /* ServerAPI.swift in Sources */,
@@ -557,6 +576,7 @@
 				DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */,
 				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
+				DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
 				DDA7B4C923897E0200A4C69D /* User.swift in Sources */,
 			);
