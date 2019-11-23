@@ -40,6 +40,8 @@
 		DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4DE23897FCC00A4C69D /* Plug.swift */; };
 		DDA7B4EA2389802200A4C69D /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */; };
 		DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */; };
+		DDA7B4EF2389805B00A4C69D /* TextInputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */; };
+		DDA7B4F02389805B00A4C69D /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4EE2389805B00A4C69D /* TextInput.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		DDA7B4DE23897FCC00A4C69D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
 		DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputStyle.swift; sourceTree = "<group>"; };
+		DDA7B4EE2389805B00A4C69D /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -329,6 +333,7 @@
 		DDA7B4DA23897FCC00A4C69D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4EC2389805B00A4C69D /* TextInput */,
 				DDA7B4E72389802200A4C69D /* ActivityIndicatorView */,
 				DDA7B4DE23897FCC00A4C69D /* Plug.swift */,
 			);
@@ -342,6 +347,15 @@
 				DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */,
 			);
 			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		DDA7B4EC2389805B00A4C69D /* TextInput */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */,
+				DDA7B4EE2389805B00A4C69D /* TextInput.swift */,
+			);
+			path = TextInput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,6 +622,7 @@
 				DD39BFB62386D70900FDC562 /* UIViewController+Ext.swift in Sources */,
 				DDA7B4C123897DB100A4C69D /* ThemeColors.swift in Sources */,
 				DDA7B4C023897DB100A4C69D /* ThemeApp.swift in Sources */,
+				DDA7B4F02389805B00A4C69D /* TextInput.swift in Sources */,
 				DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */,
 				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
@@ -615,6 +630,7 @@
 				DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */,
 				DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
+				DDA7B4EF2389805B00A4C69D /* TextInputStyle.swift in Sources */,
 				DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */,
 				DDA7B4EA2389802200A4C69D /* ActivityIndicatorViewController.swift in Sources */,
 				DDA7B4D723897F2E00A4C69D /* Reachability.swift in Sources */,
