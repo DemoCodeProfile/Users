@@ -36,7 +36,21 @@ class DIContainerService: DIContainerServiceProtocol {
     Method register dependencies into DI container
     */
     func registerServices() {
-        
+        container.register(
+            depedency: MoyaProvider<ServerAPI>.self,
+            implemenation: {
+                let networkLogger = NetworkLoggerPlugin(verbose: true)
+                return MoyaProvider<ServerAPI>(plugins: [networkLogger])
+        })
+        container.register(
+            depedency: UserServiceProtocol.self,
+            implemenation: { [weak self] () -> UserService in
+                guard let `self` = self else { fatalError("Fatal error container") }
+                return UserService(
+                    providerMoya: self.resolve(MoyaProvider<ServerAPI>.self),
+                    scheduler: ConcurrentDispatchQueueScheduler(qos: .default)
+                )
+        })
     }
     
     /**
