@@ -29,6 +29,7 @@
 		DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BD23897DB100A4C69D /* DefaultThemeColors.swift */; };
 		DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */; };
 		DDA7B4C623897DB100A4C69D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4BF23897DB100A4C69D /* Theme.swift */; };
+		DDA7B4C923897E0200A4C69D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4C823897E0200A4C69D /* User.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		DDA7B4BD23897DB100A4C69D /* DefaultThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultThemeColors.swift; sourceTree = "<group>"; };
 		DDA7B4BE23897DB100A4C69D /* ThemeFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFonts.swift; sourceTree = "<group>"; };
 		DDA7B4BF23897DB100A4C69D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DDA7B4C823897E0200A4C69D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		DD39BF892386C61E00FDC562 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4C723897E0200A4C69D /* Models */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -269,6 +272,14 @@
 				DDA7B4BD23897DB100A4C69D /* DefaultThemeColors.swift */,
 			);
 			path = DefaultTheme;
+			sourceTree = "<group>";
+		};
+		DDA7B4C723897E0200A4C69D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4C823897E0200A4C69D /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,6 +546,7 @@
 				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
+				DDA7B4C923897E0200A4C69D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
