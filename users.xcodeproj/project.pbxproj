@@ -37,6 +37,7 @@
 		DDA7B4D623897F2E00A4C69D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4D423897F2E00A4C69D /* UserService.swift */; };
 		DDA7B4D723897F2E00A4C69D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4D523897F2E00A4C69D /* Reachability.swift */; };
 		DDA7B4D923897F5500A4C69D /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4D823897F5500A4C69D /* ServiceError.swift */; };
+		DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4DE23897FCC00A4C69D /* Plug.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		DDA7B4D423897F2E00A4C69D /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DDA7B4D523897F2E00A4C69D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		DDA7B4D823897F5500A4C69D /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		DDA7B4DE23897FCC00A4C69D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 				DD39BF8E2386C65700FDC562 /* Services */,
 				DD39BF8B2386C63700FDC562 /* Helpers */,
 				DD39BF8A2386C62900FDC562 /* Extensions */,
+				DDA7B4DA23897FCC00A4C69D /* UI */,
 				DD39BF652386B61500FDC562 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -317,6 +320,14 @@
 				DDA7B4D023897E9900A4C69D /* DIContainerService.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		DDA7B4DA23897FCC00A4C69D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4DE23897FCC00A4C69D /* Plug.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,6 +598,7 @@
 				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
 				DDA7B4D623897F2E00A4C69D /* UserService.swift in Sources */,
+				DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */,
 				DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
 				DDA7B4D723897F2E00A4C69D /* Reachability.swift in Sources */,
