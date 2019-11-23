@@ -1,3 +1,4 @@
 "Retry" = "Retry";
 "ServerError" = "The server is not available";
 "NoConnection" = "No connection";
+"ListUsers" = "List users";

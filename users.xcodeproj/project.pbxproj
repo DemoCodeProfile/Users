@@ -42,6 +42,14 @@
 		DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */; };
 		DDA7B4EF2389805B00A4C69D /* TextInputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */; };
 		DDA7B4F02389805B00A4C69D /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4EE2389805B00A4C69D /* TextInput.swift */; };
+		DDA7B4FB238980EC00A4C69D /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDA7B4F3238980EC00A4C69D /* UserCell.xib */; };
+		DDA7B4FC238980EC00A4C69D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F4238980EC00A4C69D /* UserCell.swift */; };
+		DDA7B4FD238980EC00A4C69D /* UserListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F5238980EC00A4C69D /* UserListService.swift */; };
+		DDA7B4FE238980EC00A4C69D /* UserListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F6238980EC00A4C69D /* UserListConfiguration.swift */; };
+		DDA7B4FF238980EC00A4C69D /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F7238980EC00A4C69D /* UserListViewModel.swift */; };
+		DDA7B500238980EC00A4C69D /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F8238980EC00A4C69D /* UserListRouter.swift */; };
+		DDA7B501238980EC00A4C69D /* UserListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F9238980EC00A4C69D /* UserListProvider.swift */; };
+		DDA7B502238980EC00A4C69D /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4FA238980EC00A4C69D /* UserListViewController.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +109,14 @@
 		DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputStyle.swift; sourceTree = "<group>"; };
 		DDA7B4EE2389805B00A4C69D /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		DDA7B4F3238980EC00A4C69D /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		DDA7B4F4238980EC00A4C69D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		DDA7B4F5238980EC00A4C69D /* UserListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListService.swift; sourceTree = "<group>"; };
+		DDA7B4F6238980EC00A4C69D /* UserListConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListConfiguration.swift; sourceTree = "<group>"; };
+		DDA7B4F7238980EC00A4C69D /* UserListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		DDA7B4F8238980EC00A4C69D /* UserListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
+		DDA7B4F9238980EC00A4C69D /* UserListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListProvider.swift; sourceTree = "<group>"; };
+		DDA7B4FA238980EC00A4C69D /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +258,7 @@
 		DD39BF8C2386C64300FDC562 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B4F1238980EC00A4C69D /* UserList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -358,6 +375,29 @@
 			path = TextInput;
 			sourceTree = "<group>";
 		};
+		DDA7B4F1238980EC00A4C69D /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4F2238980EC00A4C69D /* Cells */,
+				DDA7B4F5238980EC00A4C69D /* UserListService.swift */,
+				DDA7B4F6238980EC00A4C69D /* UserListConfiguration.swift */,
+				DDA7B4F7238980EC00A4C69D /* UserListViewModel.swift */,
+				DDA7B4F8238980EC00A4C69D /* UserListRouter.swift */,
+				DDA7B4F9238980EC00A4C69D /* UserListProvider.swift */,
+				DDA7B4FA238980EC00A4C69D /* UserListViewController.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		DDA7B4F2238980EC00A4C69D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B4F3238980EC00A4C69D /* UserCell.xib */,
+				DDA7B4F4238980EC00A4C69D /* UserCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -445,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA7B4FB238980EC00A4C69D /* UserCell.xib in Resources */,
 				DD39BF722386B61700FDC562 /* LaunchScreen.storyboard in Resources */,
 				DD39BFD52386D98C00FDC562 /* Localizable.strings in Resources */,
 				DD39BF6F2386B61700FDC562 /* Assets.xcassets in Resources */,
@@ -605,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA7B4C323897DB100A4C69D /* DefaultTheme.swift in Sources */,
+				DDA7B4FE238980EC00A4C69D /* UserListConfiguration.swift in Sources */,
 				DDA7B4D223897E9900A4C69D /* DIContainerSwinject.swift in Sources */,
 				DD39BFDC2386DB8400FDC562 /* R.generated.swift in Sources */,
 				DD39BFAE2386D68200FDC562 /* Flowable.swift in Sources */,
@@ -612,8 +654,11 @@
 				DD39BFB72386D70900FDC562 /* Observable+Ext.swift in Sources */,
 				DDA7B4D123897E9900A4C69D /* DependencyInjection.swift in Sources */,
 				DDA7B4C223897DB100A4C69D /* DefaultThemeFonts.swift in Sources */,
+				DDA7B4FF238980EC00A4C69D /* UserListViewModel.swift in Sources */,
+				DDA7B4FC238980EC00A4C69D /* UserCell.swift in Sources */,
 				DDA7B4D923897F5500A4C69D /* ServiceError.swift in Sources */,
 				DD39BFB02386D68200FDC562 /* FlowableConfiguration.swift in Sources */,
+				DDA7B502238980EC00A4C69D /* UserListViewController.swift in Sources */,
 				DDA7B4CC23897E3500A4C69D /* ServerAPI.swift in Sources */,
 				DD39BF662386B61500FDC562 /* AppDelegate.swift in Sources */,
 				DD39BFB52386D70900FDC562 /* SharedSequence+Ext.swift in Sources */,
@@ -624,9 +669,12 @@
 				DDA7B4C023897DB100A4C69D /* ThemeApp.swift in Sources */,
 				DDA7B4F02389805B00A4C69D /* TextInput.swift in Sources */,
 				DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */,
+				DDA7B501238980EC00A4C69D /* UserListProvider.swift in Sources */,
 				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
+				DDA7B4FD238980EC00A4C69D /* UserListService.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
 				DDA7B4D623897F2E00A4C69D /* UserService.swift in Sources */,
+				DDA7B500238980EC00A4C69D /* UserListRouter.swift in Sources */,
 				DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */,
 				DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,

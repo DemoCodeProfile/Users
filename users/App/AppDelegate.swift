@@ -14,6 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupNavigationAppereance()
+        DependencyInjection.instance.container.registerServices()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let configUserList = UserListConfiguration()
+        let navigationController = UINavigationController(rootViewController: configUserList.viewController ?? UIViewController())
+        navigationController.navigationBar.isTranslucent = false
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        configUserList.configureStart(input: UserListConfiguration.Input(transition: .none))
         return true
     }
     

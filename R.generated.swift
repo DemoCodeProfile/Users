@@ -105,10 +105,19 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.image` struct is generated, and contains static references to 1 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
+    /// Image `cross`.
+    static let cross = Rswift.ImageResource(bundle: R.hostingBundle, name: "cross")
     /// Image `noPhoto`.
     static let noPhoto = Rswift.ImageResource(bundle: R.hostingBundle, name: "noPhoto")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "cross", bundle: ..., traitCollection: ...)`
+    static func cross(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.cross, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "noPhoto", bundle: ..., traitCollection: ...)`
@@ -120,6 +129,26 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `UserCell`.
+    static let userCell = _R.nib._UserCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "UserCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.userCell) instead")
+    static func userCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.userCell)
+    }
+    #endif
+
+    static func userCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UserCell? {
+      return R.nib.userCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UserCell
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.string` struct is generated, and contains static references to 2 localization tables.
   struct string {
     /// This `R.string.launchScreen` struct is generated, and contains static references to 0 localization keys.
@@ -127,8 +156,12 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.string.localizable` struct is generated, and contains static references to 3 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
     struct localizable {
+      /// en translation: List users
+      ///
+      /// Locales: en, ru
+      static let listUsers = Rswift.StringResource(key: "ListUsers", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ru"], comment: nil)
       /// en translation: No connection
       ///
       /// Locales: en, ru
@@ -141,6 +174,21 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, ru
       static let serverError = Rswift.StringResource(key: "ServerError", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ru"], comment: nil)
+
+      /// en translation: List users
+      ///
+      /// Locales: en, ru
+      static func listUsers(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("ListUsers", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "ListUsers"
+        }
+
+        return NSLocalizedString("ListUsers", bundle: bundle, comment: "")
+      }
 
       /// en translation: No connection
       ///
@@ -209,9 +257,39 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _UserCell.validate()
+    }
+
+    struct _UserCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "UserCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UserCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UserCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "noPhoto", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'noPhoto' is used in nib 'UserCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
