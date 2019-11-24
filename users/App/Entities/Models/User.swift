@@ -37,4 +37,20 @@ struct User: Codable {
             self.createdAt = formatter.date(from: createdAt)
         }
     }
+    
+    init(
+        id: Int?,
+        firstName: String?,
+        lastName: String?,
+        email: String?,
+        avatarUrl: String?,
+        createdAt: Date? = nil
+    ) {
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.avatarUrl = avatarUrl
+        self.createdAt = createdAt
+    }
 }

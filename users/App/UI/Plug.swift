@@ -33,6 +33,7 @@ class Plug: UIView {
     
     private func configureUI() {
         isHidden = true
+        backgroundColor = Theme.colors.background
         descriptionLabel.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         descriptionLabel.textColor = UIColor.black
         descriptionLabel.numberOfLines = 0

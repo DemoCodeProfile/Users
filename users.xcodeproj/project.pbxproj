@@ -40,8 +40,6 @@
 		DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4DE23897FCC00A4C69D /* Plug.swift */; };
 		DDA7B4EA2389802200A4C69D /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */; };
 		DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */; };
-		DDA7B4EF2389805B00A4C69D /* TextInputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */; };
-		DDA7B4F02389805B00A4C69D /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4EE2389805B00A4C69D /* TextInput.swift */; };
 		DDA7B4FB238980EC00A4C69D /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDA7B4F3238980EC00A4C69D /* UserCell.xib */; };
 		DDA7B4FC238980EC00A4C69D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F4238980EC00A4C69D /* UserCell.swift */; };
 		DDA7B4FD238980EC00A4C69D /* UserListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F5238980EC00A4C69D /* UserListService.swift */; };
@@ -50,6 +48,12 @@
 		DDA7B500238980EC00A4C69D /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F8238980EC00A4C69D /* UserListRouter.swift */; };
 		DDA7B501238980EC00A4C69D /* UserListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4F9238980EC00A4C69D /* UserListProvider.swift */; };
 		DDA7B502238980EC00A4C69D /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B4FA238980EC00A4C69D /* UserListViewController.swift */; };
+		DDA7B50A23898B6D00A4C69D /* AddUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B50423898B6C00A4C69D /* AddUserService.swift */; };
+		DDA7B50B23898B6D00A4C69D /* AddUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B50523898B6C00A4C69D /* AddUserProvider.swift */; };
+		DDA7B50C23898B6D00A4C69D /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B50623898B6C00A4C69D /* AddUserViewController.swift */; };
+		DDA7B50D23898B6D00A4C69D /* AddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B50723898B6C00A4C69D /* AddUserViewModel.swift */; };
+		DDA7B50E23898B6D00A4C69D /* AddUserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B50823898B6C00A4C69D /* AddUserConfiguration.swift */; };
+		DDA7B50F23898B6D00A4C69D /* AddUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA7B50923898B6C00A4C69D /* AddUserRouter.swift */; };
 		DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45ADB2389000700199274 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,8 +111,6 @@
 		DDA7B4DE23897FCC00A4C69D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
 		DDA7B4E82389802200A4C69D /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
-		DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputStyle.swift; sourceTree = "<group>"; };
-		DDA7B4EE2389805B00A4C69D /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 		DDA7B4F3238980EC00A4C69D /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		DDA7B4F4238980EC00A4C69D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		DDA7B4F5238980EC00A4C69D /* UserListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListService.swift; sourceTree = "<group>"; };
@@ -117,6 +119,12 @@
 		DDA7B4F8238980EC00A4C69D /* UserListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
 		DDA7B4F9238980EC00A4C69D /* UserListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListProvider.swift; sourceTree = "<group>"; };
 		DDA7B4FA238980EC00A4C69D /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		DDA7B50423898B6C00A4C69D /* AddUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserService.swift; sourceTree = "<group>"; };
+		DDA7B50523898B6C00A4C69D /* AddUserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserProvider.swift; sourceTree = "<group>"; };
+		DDA7B50623898B6C00A4C69D /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		DDA7B50723898B6C00A4C69D /* AddUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
+		DDA7B50823898B6C00A4C69D /* AddUserConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserConfiguration.swift; sourceTree = "<group>"; };
+		DDA7B50923898B6C00A4C69D /* AddUserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserRouter.swift; sourceTree = "<group>"; };
 		DDF45ADB2389000700199274 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +266,7 @@
 		DD39BF8C2386C64300FDC562 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DDA7B50323898B6C00A4C69D /* AddUser */,
 				DDA7B4F1238980EC00A4C69D /* UserList */,
 			);
 			path = Modules;
@@ -350,7 +359,6 @@
 		DDA7B4DA23897FCC00A4C69D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DDA7B4EC2389805B00A4C69D /* TextInput */,
 				DDA7B4E72389802200A4C69D /* ActivityIndicatorView */,
 				DDA7B4DE23897FCC00A4C69D /* Plug.swift */,
 			);
@@ -364,15 +372,6 @@
 				DDA7B4E92389802200A4C69D /* ActivityIndicatorView.swift */,
 			);
 			path = ActivityIndicatorView;
-			sourceTree = "<group>";
-		};
-		DDA7B4EC2389805B00A4C69D /* TextInput */ = {
-			isa = PBXGroup;
-			children = (
-				DDA7B4ED2389805B00A4C69D /* TextInputStyle.swift */,
-				DDA7B4EE2389805B00A4C69D /* TextInput.swift */,
-			);
-			path = TextInput;
 			sourceTree = "<group>";
 		};
 		DDA7B4F1238980EC00A4C69D /* UserList */ = {
@@ -396,6 +395,19 @@
 				DDA7B4F4238980EC00A4C69D /* UserCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDA7B50323898B6C00A4C69D /* AddUser */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7B50423898B6C00A4C69D /* AddUserService.swift */,
+				DDA7B50523898B6C00A4C69D /* AddUserProvider.swift */,
+				DDA7B50623898B6C00A4C69D /* AddUserViewController.swift */,
+				DDA7B50723898B6C00A4C69D /* AddUserViewModel.swift */,
+				DDA7B50823898B6C00A4C69D /* AddUserConfiguration.swift */,
+				DDA7B50923898B6C00A4C69D /* AddUserRouter.swift */,
+			);
+			path = AddUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -653,8 +665,11 @@
 				DD39BFAD2386D68200FDC562 /* OpenConfiguration.swift in Sources */,
 				DD39BFB72386D70900FDC562 /* Observable+Ext.swift in Sources */,
 				DDA7B4D123897E9900A4C69D /* DependencyInjection.swift in Sources */,
+				DDA7B50A23898B6D00A4C69D /* AddUserService.swift in Sources */,
 				DDA7B4C223897DB100A4C69D /* DefaultThemeFonts.swift in Sources */,
+				DDA7B50E23898B6D00A4C69D /* AddUserConfiguration.swift in Sources */,
 				DDA7B4FF238980EC00A4C69D /* UserListViewModel.swift in Sources */,
+				DDA7B50B23898B6D00A4C69D /* AddUserProvider.swift in Sources */,
 				DDA7B4FC238980EC00A4C69D /* UserCell.swift in Sources */,
 				DDA7B4D923897F5500A4C69D /* ServiceError.swift in Sources */,
 				DD39BFB02386D68200FDC562 /* FlowableConfiguration.swift in Sources */,
@@ -667,18 +682,19 @@
 				DD39BFB62386D70900FDC562 /* UIViewController+Ext.swift in Sources */,
 				DDA7B4C123897DB100A4C69D /* ThemeColors.swift in Sources */,
 				DDA7B4C023897DB100A4C69D /* ThemeApp.swift in Sources */,
-				DDA7B4F02389805B00A4C69D /* TextInput.swift in Sources */,
 				DDA7B4C423897DB100A4C69D /* DefaultThemeColors.swift in Sources */,
 				DDA7B501238980EC00A4C69D /* UserListProvider.swift in Sources */,
 				DDA7B4C523897DB100A4C69D /* ThemeFonts.swift in Sources */,
 				DDA7B4FD238980EC00A4C69D /* UserListService.swift in Sources */,
+				DDA7B50D23898B6D00A4C69D /* AddUserViewModel.swift in Sources */,
+				DDA7B50F23898B6D00A4C69D /* AddUserRouter.swift in Sources */,
 				DD39BFB82386D70900FDC562 /* Result+Ext.swift in Sources */,
 				DDA7B4D623897F2E00A4C69D /* UserService.swift in Sources */,
 				DDA7B500238980EC00A4C69D /* UserListRouter.swift in Sources */,
+				DDA7B50C23898B6D00A4C69D /* AddUserViewController.swift in Sources */,
 				DDA7B4E423897FCC00A4C69D /* Plug.swift in Sources */,
 				DDA7B4D323897E9900A4C69D /* DIContainerService.swift in Sources */,
 				DDF45ADC2389000700199274 /* UIColor+Ext.swift in Sources */,
-				DDA7B4EF2389805B00A4C69D /* TextInputStyle.swift in Sources */,
 				DDA7B4EB2389802200A4C69D /* ActivityIndicatorView.swift in Sources */,
 				DDA7B4EA2389802200A4C69D /* ActivityIndicatorViewController.swift in Sources */,
 				DDA7B4D723897F2E00A4C69D /* Reachability.swift in Sources */,

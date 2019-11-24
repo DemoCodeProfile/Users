@@ -2,3 +2,10 @@
 "ServerError" = "The server is not available";
 "NoConnection" = "No connection";
 "ListUsers" = "List users";
+"AddUser" = "Add user";
+"FirstName" = "First name";
+"LastName" = "Last name";
+"Email" = "E-mail";
+"Add" = "Add";
+"UserAdded" = "User added";
+"Ok" = "Ok";

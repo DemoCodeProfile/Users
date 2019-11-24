@@ -26,4 +26,3 @@ protocol DIContainerServiceProtocol {
     func registerServices()
     func resolve<T>(_ dependency: T.Type) -> T
 }
-

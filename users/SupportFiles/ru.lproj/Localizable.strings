@@ -2,3 +2,10 @@
 "ServerError" = "Сервер не доступен";
 "NoConnection" = "Нет соединения";
 "ListUsers" = "Список пользователей";
+"AddUser" = "Добавление пользователя";
+"FirstName" = "Имя";
+"LastName" = "Фамилия";
+"Email" = "E-mail";
+"Add" = "Добавить";
+"UserAdded" = "Пользователь добавлен";
+"Ok" = "Ok";

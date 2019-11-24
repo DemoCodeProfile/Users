@@ -48,7 +48,7 @@ final class UserListViewController: UIViewController {
     }
     
     private func createUI() {
-        view.addSubview(tableView)
+        [tableView, plug].forEach { view.addSubview($0) }
     }
     
     private func configureUI() {
@@ -60,6 +60,9 @@ final class UserListViewController: UIViewController {
     
     private func layout() {
         tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        plug.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
@@ -90,6 +93,13 @@ extension UserListViewController: FlowableViewController {
             hideActivityIndicator,
             showActivityIndicator
         )
+        Driver.merge(
+            outputViewModel.error.map(to: false),
+            getUsers.asDriver(onErrorJustReturn: ()).map(to: true)
+        )
+            .drive(plug.rx.isHidden)
+            .disposed(by: disposeBag)
+        tapAddButton()
         activityIndicatorVisibility(show: activityIndicator)
         updateUsers(users: outputViewModel.users)
         return UserListConfiguration.Output()
@@ -122,6 +132,18 @@ extension UserListViewController: FlowableViewController {
             self?.tableView.reloadData()
         })
         .disposed(by: disposeBag)
+    }
+    
+    /**
+    Tap and segue to AddUserViewController
+    */
+    private func tapAddButton() {
+        addButton.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] _ in
+                _ = self?.router.showAddUserScreen(input: AddUserConfiguration.Input(transition: .push))
+            })
+            .disposed(by: disposeBag)
     }
 }
 

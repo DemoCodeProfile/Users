@@ -80,6 +80,21 @@ extension UIViewController {
         removeFromParent()
     }
     
+    func showError() {
+        let plug = Plug(frame: view.frame)
+        view.addSubview(plug)
+    }
+    
+    func plugView(error: Driver<String>) -> Driver<Void> {
+        let plug = Plug(frame: view.frame)
+        let output = plug.configure(input: Plug.Input(textPlug: error))
+        view.addSubview(plug)
+        let didTapReply = output?.didTapReply.do(onNext: { _ in
+            plug.removeFromSuperview()
+        })
+        return didTapReply ?? .empty()
+    }
+    
     func presentModal(modalPresentationStyle: UIModalPresentationStyle = .overCurrentContext) {
         self.modalPresentationStyle = modalPresentationStyle
         UIViewController.getTopViewController()?.present(self, animated: true, completion: nil)
